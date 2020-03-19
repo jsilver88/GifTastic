@@ -40,3 +40,8 @@ body {
     justify-content: space-evenly;
     overflow-x: hidden;
 }
+
+.rating, .title {
+    justify-content: center;
+    font-weight: bold;
+}
