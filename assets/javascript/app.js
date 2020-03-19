@@ -47,7 +47,7 @@ function showGif() {
 
 $('.submit').on('click', function (event){
     event.preventDefault();
-    var input = $('.user-input').val().trim()
+    var input = $('#user-input').val().trim()
 
     if (!input) {
         alert('The force is not strong with you');
