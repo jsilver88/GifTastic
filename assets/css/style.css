@@ -12,7 +12,10 @@ body {
 
 #search-form {
     position: absolute;
-    left: 60%;
+    left: 55%;
+    bottom: 60%;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .header {
@@ -20,4 +23,20 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.gifs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 4;
+    justify-content: space-evenly;
+    overflow-x: hidden;
 }
