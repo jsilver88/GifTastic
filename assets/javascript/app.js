@@ -45,6 +45,34 @@ function showGif() {
 
 }
 
+function animateImgStillImg() {
+    var src = $(this).attr('src')
+    switch (src) {
+        case $(this).attr('data-still'):
+            $(this).attr('src', $(this).attr('data-animate'))
+            break;
+        case $(this).attr('data-animate'):
+            $(this).attr('src', $(this).attr('data-still'))
+            break;
+        default:
+            break;
+    }
+}
+
+$(document).on('click', '.images', animateImgStillImg)
+
+/*$('.images').on('click', function() {
+    var src = $(this).attr('src')
+    if (src === 'data-still'){
+        $(this).attr('src', $(this).attr('data-animate'));
+        $(this).attr('src', $(this).attr('data-still'));
+    } else {
+        $(this).attr('data-animate');
+        $(this).attr('src', $(this).attr('data-still'));
+    }
+})
+*/
+
 $('.submit').on('click', function (event){
     event.preventDefault();
     var input = $('#user-input').val().trim()
